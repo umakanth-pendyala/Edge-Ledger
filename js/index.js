@@ -19,7 +19,7 @@ $("#navbar a, .btn").on("click", function (event) {
     const hash = this.hash;
     console.log(hash);
 
-    $("html", "body").animate(
+    $("html, body").animate(
       {
         scrollTop: $(hash).offset().top - 100,
       },
